@@ -1,0 +1,104 @@
+﻿<script lang="javascript" type="text/javascript">
+        function validate() {
+            if (document.contact.myName.value == "") {
+                alert("Please provide your GoodName!");
+                document.contact.myName.focus();
+                return false;
+            }
+
+            var email = document.contact.myEmail.value;
+            atpos = email.indexOf("@");
+            dotpos = email.lastIndexOf(".");
+            if (email == "" || atpos < 1 || (dotpos - atpos < 2)) {
+                alert("Please enter correct Email ID")
+                document.contact.myEmail.focus();
+                return false;
+            }
+            if (document.contact.myComments.value == "") {
+                alert("Please provide your comments!");
+                document.contact.myComments.focus();
+                return false;
+            }
+             return (true);
+        }
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blueberryswirls.com</title>
+    <meta charset="utf-8" />
+    <meta name="discription" content="Website for Sarita Mishra to showcase her quilling and crochet work">
+    <meta name="author" content="Kavita Mishra">
+    <meta name="keywords" content="HTML,CSS,Javascript ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body >
+    <header>
+        <div class="row">
+            <div class="col">
+                <a href="Contact.html"> <img class="style-logo" src="Blueberryswirls logo.jpg" width="70" height="130" alt="Blueberryswirls logo" /></a>
+                <div class="style-logo-title"> 
+                <h1>BlueberrySwirls</h1>
+                </div>
+                <nav class="style-nav">
+                    <a href="Blueberryswirls Index.html">Home</a>
+		    <a href="About.html">About Me</a>
+		    <a href="Crochet.html">Crochet</a>
+	       	    <a href="Quilling.html">Quilling</a>
+		    <a href="Blog.html">My Blog</a>
+		    <a href="Contact.html">Contact Me</a>
+		    <a href="Followme.html">Follow Me</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<main>
+  <form id="form2" name="contact" onsubmit="return validate()" method="get" action="Index.
+    <table id="dealtable">
+   	<tbody id="conttbody">
+      	</tbody>
+     </table>
+              
+     <fieldset>
+	<legend>Customer Details</legend>
+        <table class=".tableform ">
+        <!--style="width:100%";-->
+        <caption> Contact Us Form </caption>
+        <tr>
+            <td><label for="myName" class="lblcust ">Name:</label>   <input type="text" name="myName" id="myName"></td>
+        </tr>
+        <tr>
+	    <td><label for="myEmail" class="lblcust ">E-mail:</label>   <input type="text" name="myEmail" id="myEmail"></td>  </tr>
+        <tr>
+            <td><label for="myComments" class="lblcust">Comments:</label>
+                <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit" class="mySubmit" id="mysubmit" /></td> <!--class="mySubmit" onclick="validate()"-->
+        </tr>
+        </table>
+      </fieldset>
+  </form>
+</main>
+
+<footer>
+   <div class="row">
+      <div class="col">
+	<br>
+        <a href="https://www.facebook.com/blueberryswirlz/" target="_blank">
+        <img class="homeimages" src="facebook.gif" style="float:right; padding:3px;" height="40" width="40" /> </a>
+	<a href="https://www.instagram.com/" target="_blank">
+        <img class="homeimages" src="instagram.jpg" style="float:right; padding:3px;" height="40" width="40" /> </a>
+	<a href="https://www.youtube.com/channel/UCQyIqPJUVxed1-5Q0TvEqGg/" target="_blank">
+        <img class="homeimages" src="youtube.gif" style="float:right; padding:3px;" height="40" width="40" /> </a>
+        <p class="footer-text">©2018 Blueberryswirls.com. All rights reserved.</p>
+        <a href="mailto:kavita02@student.fdu.edu" target="_blank">Contact Me</a>
+     </div>
+   </div>
+</footer>
+</body>
+</html>

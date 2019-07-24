@@ -1,0 +1,268 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial, Comic Sans MS, " sans-serif";
+}
+
+header {
+	padding: 3px;
+	background-image: url('');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+
+/* index page javascript*/
+    background-color: #e6f4f8; /* Original color*/
+    transition: background-color 2s ease-in;
+}
+
+.style-logo {
+	padding-top: 2%;
+	padding-left: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+    
+	
+}
+.style-logo-title {font-family: 'Comic Sans MS', cursive, sans-serif;
+	font-size: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2%;
+	padding-right: 4%;
+        width: 100%;
+	text-shadow: 2px 2px #FF0000;
+	text-align: center;
+
+}
+
+.style-nav a:link{color:#fe770b }
+
+.style-nav a:hover{text-decoration:underline;
+		color:#ed2553;}
+
+h1 {
+	font-size: 57px;
+	text-transform: uppercase;
+	font-weight: 200;
+        padding-top:2%;
+	margin-bottom: 50px;
+   text-shadow: 1px 1px #000000;
+}
+
+h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 30px;
+    	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+}
+
+
+p {
+	font-size: 18px;
+	font-weight: 400;
+    	
+	margin-bottom: 35px;
+}
+
+.row:before, .row:after {
+	content: "";
+	display: block;
+}
+
+.row:after {
+	clear: both;
+}
+.col {
+	
+	width: 100%;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}	
+
+img {
+	/*width: 100%;*/
+	max-width: 100%;
+	
+	vertical-align: middle;
+ 
+   
+}
+
+footer {
+	padding: 20px 30px;
+	
+}
+.footer-text {
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+form { background-color:#F8F8F8;       
+	font-family: Arial, sans-serif;    
+	padding: 10px; 
+    /*width: 600px*/;
+} 
+
+label { float: left;        
+	/*width: 100px;*/        
+	clear: left;       
+	text-align: right;       
+	padding-left: 10px;        
+	margin-top: 10px; } 
+
+input, textarea { margin-top: 10px;
+	display: block; } 
+
+/*#mySubmit { margin-left: 100px; }*/
+.mySubmit {
+        margin-left: 200px;
+        background-color: #0079ce;
+        border: none;
+        color: #f4f4f4;
+        cursor: pointer;
+        height: 50px;
+        text-transform: uppercase;
+        width: 150px;
+    }
+
+ #login {
+        margin: 50px auto;
+        width: 350px;
+    }
+
+form fieldset input[type="text"], input[type="password"], textarea {
+background-color: #e5e5e5;
+border: none;
+border-radius: 3px;
+/*-moz-border-radius: 3px;
+-webkit-border-radius: 3px;*/
+/*color: #5a5656;*/
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 14px;
+height: 40px;
+outline: none;
+padding: 0px 0px;
+width: 280px;
+/*-webkit-appearance: none;*/
+margin-left: auto;
+margin-right: auto;
+}
+
+.aboutme {
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 14px;
+height: 40px;
+text-align: center;
+padding-bottom: 20%;
+}
+
+.crochet {
+font-family: SAns-serif;
+font-size: 18px;
+height: 100px;
+text-align: center;
+}
+
+.quilling {
+font-family: SAns-serif;
+font-size: 15px;
+height: 100px;
+text-align: left;
+}
+
+main {padding:25px;
+}
+.homeimages  
+{	margin: auto;
+    	display: block;
+}
+
+form fieldset input[type="submit"] {
+        background-color: #008dde;
+        border: none;
+        border-radius: 3px;
+        /*-moz-border-radius: 3px;
+        -webkit-border-radius: 3px;*/
+        color: #f4f4f4;
+        cursor: pointer;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        height: 50px;
+        text-transform: uppercase;
+        width: 300px;
+        margin-left:auto;
+        margin-right: auto;
+        /*-webkit-appearance: none;*/
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    form fieldset a {
+        color: #5a5656;
+        font-size: 10px;
+    }
+
+        form fieldset a:hover {
+            text-decoration: underline;
+        }
+
+   
+/*Desktop View*/
+@media (min-width: 1100px) {
+
+    body {
+        max-width: 1400px;
+    }
+
+    header{
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
+    .style-logo {
+        float: left;
+        width: 200px;
+	height 200px;
+    }
+
+    .style-nav {
+        float: center;
+    	text-shadow: 1px 1px #000000;
+    	font-size: large;
+	text-align: center;
+    }
+
+        .style-nav ul li {
+            padding-top: 17%;
+            display: inline-block;
+        }
+
+
+    .col {
+        float: left;
+        padding: 0px 7px 14px;
+    }
+
+
+
+
+
+ 
+
